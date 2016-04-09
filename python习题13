@@ -1,0 +1,20 @@
+#一、名词解释
+#1。参数：
+#这里的参数是指传递给脚本的参数，如在命令行中输入命令：python ex13.py second third
+#python后面跟的是3个参数，以空格间隔。
+#2.包：
+#一个实现某类特定功能的参数、函数、类的集合。类似模块、库（libraries）
+
+# 二、代码分析
+from sys impot argv
+script, first, second, third = argv
+
+print "The script is called:", script
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:". third
+
+# from....import......是导入外部模块的固定格式，也可以import.....。两种写法的不同表现在代码中的条用格式，如
+# sys.argv   通过import sys 导入，切导入了sys模块下所有对象
+#argv  通过from sys import argv 导入，且只导入了argv变量
+通过“python -m pydoc sys”命令查看帮助信息
